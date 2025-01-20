@@ -1,0 +1,1 @@
+This bug occurs when using the Expo Web API to handle deep links.  Specifically, when a user clicks a deep link containing query parameters, the `Linking.getInitialURL` method in Expo does not return the complete URL with query parameters. Instead, it might truncate the URL or only return a part of it, causing problems in parsing and handling the intended data.
